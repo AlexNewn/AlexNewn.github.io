@@ -12,17 +12,22 @@
     .panel-default > .panel-heading {
       cursor: pointer;
     }
-    .lesson-links {
-      margin-top: 20px;
-    }
-    .lesson-links div {
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .lesson-links a {
-      text-decoration: none;
-    }
+  .lesson-links div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  
+  .lesson-links span {
+    flex: 1;
+    text-align: left; /* Align titles on the left */
+  }
+  
+  .lesson-links span:last-child {
+    text-align: right; /* Align corrections to the right */
+  }
+
   </style>
   <script>
     $(document).ready(function () {
