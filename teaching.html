@@ -12,21 +12,29 @@
     .panel-default > .panel-heading {
       cursor: pointer;
     }
-  .lesson-links div {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-  }
-  
-  .lesson-links span {
-    flex: 1;
-    text-align: left; /* Align titles on the left */
-  }
-  
-  .lesson-links span:last-child {
-    text-align: right; /* Align corrections to the right */
-  }
+.lesson-links div {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns for lesson and corrections */
+  gap: 20px; /* Space between lesson and corrections */
+  align-items: baseline; /* Align the links properly */
+}
+
+.lesson-links span {
+  text-align: left; /* Keep all text aligned to the left */
+}
+
+.lesson-links span:last-child {
+  text-align: right; /* Align corrections text in its column */
+}
+
+.lesson-links span a {
+  text-decoration: none;
+}
+
+.lesson-links span.no-link {
+  text-align: left; /* Ensure non-link lessons align properly */
+}
 
   </style>
   <script>
@@ -91,10 +99,10 @@
             <span><a href="https://www.dropbox.com/s/example/corrections_week5.pdf?dl=1" target="_blank">Corrections</a></span>
           </div>
           <div>
-            <span><a href="https://www.dropbox.com/s/example/macro.pdf?dl=1" target="_blank">Macro-économie</a></span>
+            <h3>L3 Traitements de données</h3>
           </div>
           <div>
-            <span><a href="https://www.dropbox.com/s/example/data_processing.pdf?dl=1" target="_blank">Traitement de données</a></span>
+            <h3>L1 Macroéconomie</h3>
           </div>
         </div>
 
