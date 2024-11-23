@@ -12,28 +12,25 @@
     .panel-default > .panel-heading {
       cursor: pointer;
     }
+
     .lesson-links div {
       margin-bottom: 10px;
-      display: grid;
-      grid-template-columns: auto auto; /* Two columns for lesson and corrections */
-      gap: 20px; /* Space between lesson and corrections */
-      align-items: baseline; /* Align the links properly */
+      display: flex; /* Use flexbox for better alignment and control */
+      justify-content: space-between; /* Space out the lesson and corrections */
+      align-items: baseline; /* Align the items at their baseline for consistency */
     }
     
     .lesson-links span {
-      text-align: left; /* Keep all text aligned to the left */
+      text-align: left; /* Ensure text alignment to the left for the first column */
+      flex-grow: 1; /* Allows each span to grow and take up equal space */
     }
     
     .lesson-links span:last-child {
-      text-align: right; /* Align corrections text in its column */
+      text-align: right; /* Right align the corrections column */
     }
     
     .lesson-links span a {
-      text-decoration: none;
-    }
-    
-    .lesson-links span.no-link {
-      text-align: left; /* Ensure non-link lessons align properly */
+      text-decoration: none; /* Removes underline from links */
     }
 
   </style>
