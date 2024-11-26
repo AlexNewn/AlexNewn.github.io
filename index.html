@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
 <head>
   <title>Alex Newnham</title>
@@ -35,86 +29,87 @@
       .news p {
           margin-left: 0; /* Align text with header */
       }
+      .sidebar {
+          position: fixed;
+          top: 60px; /* Adjust based on your navbar height */
+          left: 10px;
+          width: 300px;
+      }
+      .main-content {
+          margin-left: 320px; /* Matches sidebar width plus some spacing */
+      }
+      iframe {
+          width: 100%;
+          height: 100vh;
+          border: none;
+      }
   </style>
 </head>
 <body>
 
-
 <!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-		</div>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-			    <li><a href="index.html">Home</a></li>
-			    <li><a href="research.html">Research</a></li>
-			    <li><a href="CV_Alex_Newnham_EN_website.pdf" target="_blank">CV</a></li>
-			    <li><a href="teaching.html">Teaching</a></li>
-			</ul>
+<!-- Sidebar -->
+<div class="sidebar">
+  <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Alex Newnham</b></div><br>
+  <p><b>PhD Candidate in Economics</b></p>
+  <p><b>alex[.]newnham[at]universite-paris-saclay.fr</b><br>
+  <a href="https://www.universite-paris-saclay.fr/">University Paris-Saclay</a><br>
+  <a href="https://www.google.com/maps/place/Facult%C3%A9+Jean+Monnet+(Droit,+%C3%89conomie,+Management)+-+Universit%C3%A9+Paris-Saclay/@48.7820277,2.2827488,17z/data=!3m2!4b1!5s0x47e670b17df8f8d5:0x1e2938d781efae62!4m6!3m5!1s0x47e670b17dd4001d:0xe9d9159f3c7a9d19!8m2!3d48.7820242!4d2.2849375!16s%2Fg%2F1jkymxrcp">Faculté Jean Monnet</a><br>
+  <a href="http://www.ritm.universite-paris-saclay.fr/">Laboratoire du RITM</a><br>
+  <a style="color:#333;" href="https://github.com/AlexNewn" target="_blank">
+    <img src="github_icon.png" width="30" height="30"> <b>AlexNewn</b>
+  </a>
+  </p>
+  <br>
+  <img style="max-width:90%;" class="img-profile" src="IMG_4917.jpeg" alt="">
+</div>
 
-		</div>
-	  </div>
-	</nav>
+<!-- Main Content -->
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Main Image -->
+        <img class="img-responsive" src="photo.gif" alt=""><br>
 
-  <!-- Page Content -->
-    <div class="container">
+        <div class="content">
+          <p>I am a PhD candidate in economics at the RITM (Paris-Saclay) under the supervision of Matthieu Crozet.</p>
 
-        <div class="row">
+          <p>I am primarily interested in Migration, Spatial Economics and Economic History. My current work aims to understand the drivers of contemporary and historical internal migration using a combination of empirical and structural methods.</p>
 
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-
-                <!-- Main Image -->
-                <img class="img-responsive" src="photo.gif" alt=""><br>
-
-                <div class="content">
-                    <p>I am a PhD candidate in economics at the RITM (Paris-Saclay) under the supervision of Matthieu Crozet.</p>
-
-                    <p>I am primarily interested in Migration, Spatial Economics and Economic History. My current work aims to understand the drivers of contemporary and historical internal migration using a combination of empirical and structural methods.</p>
-
-                    <p>I study what enables or disables individuals and households to move, focusing on understanding the recent decrease in mobility that many countries have experienced.</p>
-                </div>
-
-                <div class="news">
-                    <h3>News</h3>
-                    <p>I am looking for a postdoc starting in fall 2025!</p>
-                </div>
-
-            </div>
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Alex Newnham</b></div><br>
-                <p><b>PhD Candidate in Economics</b></p>
-                <p><b>alex[.]newnham[at]universite-paris-saclay.fr</b><br>
-                <a href="https://www.universite-paris-saclay.fr/">University Paris-Saclay</a><br>
-                <a href="https://www.google.com/maps/place/Facult%C3%A9+Jean+Monnet+(Droit,+%C3%89conomie,+Management)+-+Universit%C3%A9+Paris-Saclay/@48.7820277,2.2827488,17z/data=!3m2!4b1!5s0x47e670b17df8f8d5:0x1e2938d781efae62!4m6!3m5!1s0x47e670b17dd4001d:0xe9d9159f3c7a9d19!8m2!3d48.7820242!4d2.2849375!16s%2Fg%2F1jkymxrcp">Faculté Jean Monnet</a><br>
-                <a href="http://www.ritm.universite-paris-saclay.fr/">Laboratoire du RITM</a><br>
-                <a style="color:#333;" href="https://github.com/AlexNewn" target="_blank">
-                    <img src="github_icon.png" width="30" height="30">
-                </a>
-                </p>
-                <p></p>
-                <br>
-                <img style="max-width:90%;" class="img-profile" src="IMG_4917.jpeg" alt="">
-            </div>
+          <p>I study what enables or disables individuals and households to move, focusing on understanding the recent decrease in mobility that many countries have experienced.</p>
         </div>
 
-
+        <div class="news">
+          <h3>News</h3>
+          <p>I am looking for a postdoc starting in fall 2025!</p>
+        </div>
+      </div>
     </div>
-    <!-- /.container -->
-
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+  </div>
+</div>
 
 </body>
-
 </html>
