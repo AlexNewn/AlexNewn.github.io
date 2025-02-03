@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Research - Alex Newnham</title>
+  <title>Teaching - Alex Newnham</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -9,30 +9,34 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <style>
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .content {
-      max-width: 900px; /* Consistent max width for content */
-      margin: 20px auto; /* Center the content with margin */
+      max-width: 900px;
+      margin: 20px auto;
+      padding-left: 15px;
+      padding-right: 15px;
     }
-    h2, h3 {
-      color: #2c3e50;
+    .lesson-links div {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
-    .paper-section {
-      margin-bottom: 40px;
+    .lesson-links span {
+      flex-grow: 1;
+      text-align: left;
     }
-    .paper {
-      margin-top: 20px;
+    .lesson-links span:last-child {
+      text-align: right;
     }
-    .title {
-      font-weight: bold;
-      font-size: 1.1em;
+    .lesson-links a {
+      text-decoration: none;
     }
-    .coauthors {
-      font-style: italic;
-      color: #555;
-    }
-    .abstract {
-      margin-top: 10px;
-      text-align: justify;
+    .accordion .card-header {
+      cursor: pointer;
     }
   </style>
 </head>
@@ -48,19 +52,20 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="CV_Alex_Newnham_EN_website.pdf" target="_blank">CV</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="teaching.html">Teaching</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
 
 
 <!-- Navigation -->
