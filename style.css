@@ -1,0 +1,30 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content {
+    max-width: 900px; /* Consistent max width for content */
+    margin: 20px auto; /* Center the content with margin */
+    padding: 0 15px; /* Padding for alignment */
+}
+
+.navbar {
+    background-color: #333; /* Example navbar color */
+}
+
+.lesson-links div, .research-links div, .cv-links div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.lesson-links a, .research-links a, .cv-links a {
+    text-decoration: none;
+    color: #007bff; /* Example link color */
+}
+
+.accordion .card-header, .panel .panel-heading {
+    cursor: pointer;
+}
