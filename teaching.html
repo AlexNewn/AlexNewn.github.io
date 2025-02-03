@@ -9,26 +9,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <style>
+    .content {
+      max-width: 900px; /* Consistent max width for content */
+      margin: 20px auto; /* Center the content with margin */
+    }
     .lesson-links div {
       margin-bottom: 10px;
-      display: flex; /* Use flexbox for better alignment and control */
-      justify-content: space-between; /* Space out the lesson and corrections */
-      align-items: baseline; /* Align the items at their baseline for consistency */
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
-
     .lesson-links span {
-      text-align: left; /* Ensure text alignment to the left for the first column */
-      flex-grow: 1; /* Allows each span to grow and take up equal space */
+      flex-grow: 1;
+      text-align: left;
     }
-
     .lesson-links span:last-child {
-      text-align: right; /* Right align the corrections column */
+      text-align: right;
     }
-
     .lesson-links a {
-      text-decoration: none; /* Removes underline from links */
+      text-decoration: none;
     }
-
     .accordion .card-header {
       cursor: pointer;
     }
@@ -37,56 +37,63 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Alex Newnham</a>
+      <a class="navbar-brand" href="#">Alex Newnham</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html">Home</a>
-          <a class="nav-item nav-link" href="research.html">Research</a>
-          <a class="nav-item nav-link" href="CV_Alex_Newnham_EN_website.pdf" target="_blank">CV</a>
-          <a class="nav-item nav-link active" href="teaching.html">Teaching</a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CV_Alex_Newnham_EN_website.pdf" target="_blank">CV</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="teaching.html">Teaching</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Teaching</h1>
-        <h2>2024/2025 Teaching Material</h2>
-        <div class="lesson-links">
-          <h3>M1 IES Outil d'analyse du web</h3>
-          <div>
-            <span><a href="https://www.dropbox.com/s/example/week1.pdf?dl=1" target="_blank">Python Basics</a></span>
-            <span><a href="https://www.dropbox.com/s/example/corrections_week1.pdf?dl=1" target="_blank">Corrections</a></span>
-          </div>
-          <!-- Additional weeks and materials go here -->
-        </div>
+  <div class="container content">
+    <h1>Teaching</h1>
+    <h2>2024/2025 Teaching Material</h2>
+    <div class="lesson-links">
+      <h3>M1 IES Outil d'analyse du web</h3>
+      <div>
+        <span><a href="https://www.dropbox.com/s/example/week1.pdf?dl=1" target="_blank">Python Basics</a></span>
+        <span><a href="https://www.dropbox.com/s/example/corrections_week1.pdf?dl=1" target="_blank">Corrections</a></span>
+      </div>
+      <!-- Additional links and corrections as needed -->
+    </div>
 
-        <h2>Previous Years</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  2023/2024
-                </button>
-              </h5>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                <a href="#">M1 IES Outil d'analyse du web (2023/2024)</a>
-                <!-- Additional courses from 2023/2024 -->
-              </div>
-            </div>
+    <h2>Previous Years</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              2023/2024
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li><a href="#">M1 IES Outil d'analyse du web (2023/2024)</a></li>
+              <li><a href="#">L3 Microéconomie 3 (2023/2024)</a></li>
+            </ul>
           </div>
-          <!-- Additional years go here -->
         </div>
       </div>
+      <!-- Additional years' data -->
     </div>
   </div>
+
 </body>
 </html>
