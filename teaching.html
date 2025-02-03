@@ -9,28 +9,28 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <style>
-    .panel-default > .panel-heading {
-      cursor: pointer;
-    }
-
     .lesson-links div {
       margin-bottom: 10px;
       display: flex; /* Use flexbox for better alignment and control */
       justify-content: space-between; /* Space out the lesson and corrections */
       align-items: baseline; /* Align the items at their baseline for consistency */
     }
-    
+
     .lesson-links span {
       text-align: left; /* Ensure text alignment to the left for the first column */
       flex-grow: 1; /* Allows each span to grow and take up equal space */
     }
-    
+
     .lesson-links span:last-child {
       text-align: right; /* Right align the corrections column */
     }
-    
-    .lesson-links span a {
+
+    .lesson-links a {
       text-decoration: none; /* Removes underline from links */
+    }
+
+    .accordion .card-header {
+      cursor: pointer;
     }
   </style>
 </head>
@@ -38,16 +38,16 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">Alex Newnham</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
           <a class="nav-item nav-link" href="index.html">Home</a>
           <a class="nav-item nav-link" href="research.html">Research</a>
           <a class="nav-item nav-link" href="CV_Alex_Newnham_EN_website.pdf" target="_blank">CV</a>
           <a class="nav-item nav-link active" href="teaching.html">Teaching</a>
-        </div>
+        </ul>
       </div>
     </div>
   </nav>
@@ -56,19 +56,34 @@
     <div class="row">
       <div class="col-md-12">
         <h1>Teaching</h1>
-
-        <!-- 2024/2025 Courses -->
         <h2>2024/2025 Teaching Material</h2>
         <div class="lesson-links">
           <h3>M1 IES Outil d'analyse du web</h3>
-          <!-- Lesson links and evaluations are added here, similar to the previous content. -->
+          <div>
+            <span><a href="https://www.dropbox.com/s/example/week1.pdf?dl=1" target="_blank">Python Basics</a></span>
+            <span><a href="https://www.dropbox.com/s/example/corrections_week1.pdf?dl=1" target="_blank">Corrections</a></span>
+          </div>
+          <!-- Additional weeks and materials go here -->
         </div>
 
-        <!-- Previous Years Panel -->
         <h2>Previous Years</h2>
-        <div class="accordion" id="accordion">
-          <!-- Accordion replaced Bootstrap 3 panel-group for better Bootstrap 4 integration -->
-          <!-- Previous years' teaching materials as accordion items -->
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  2023/2024
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <a href="#">M1 IES Outil d'analyse du web (2023/2024)</a>
+                <!-- Additional courses from 2023/2024 -->
+              </div>
+            </div>
+          </div>
+          <!-- Additional years go here -->
         </div>
       </div>
     </div>
