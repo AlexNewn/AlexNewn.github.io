@@ -28,3 +28,22 @@
 .accordion .card-header, .panel .panel-heading {
     cursor: pointer;
 }
+
+.iframe-container {
+  position: fixed; /* Positioning and size */
+  top: 56px; /* Height of navbar assumed to be 56px */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+iframe {
+  width: 100%; /* Responsive width */
+  height: 100%; /* Responsive height */
+  border: none; /* Remove default border */
+}
+
