@@ -30,7 +30,7 @@
 }
 
 .iframe-container {
-  position: fixed; /* Positioning and size */
+  position: fixed; /* Full-screen with fixed positioning */
   top: 56px; /* Height of navbar assumed to be 56px */
   left: 0;
   right: 0;
@@ -38,12 +38,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  width: 100%; /* Full width */
+  height: calc(100% - 56px); /* Full height minus navbar height */
 }
 
 iframe {
-  width: 100%; /* Responsive width */
-  height: 100%; /* Responsive height */
-  border: none; /* Remove default border */
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  border: none; /* Remove the border */
 }
-
